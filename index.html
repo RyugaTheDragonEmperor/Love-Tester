@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./assets/heart.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Tester</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+    <div class="bg-white p-8 rounded shadow-md max-w-md w-full">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Love Tester</h1>
+
+        <form id="partnerForm" class="space-y-4">
+            <div>
+                <label for="yourName" class="block text-sm font-medium text-gray-600">Your Name</label>
+                <input type="text" id="yourName" name="yourName" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <div>
+                <label for="partnerName" class="block text-sm font-medium text-gray-600">Partner's Name</label>
+                <input type="text" id="partnerName" name="partnerName" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <div class="text-center">
+                <button type="button" onclick="calculateLovePercentage()" class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+            </div>
+            <div id="resultContainer" class="text-center mt-4"></div>
+
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
